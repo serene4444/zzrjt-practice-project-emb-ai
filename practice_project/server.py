@@ -4,7 +4,7 @@
 '''
 from flask import Flask, render_template, request
 
-from sentiment_analysis import sentiment_analyzer
+from SentimentAnalysis.sentiment_analysis import sentiment_analyzer
 
 app = Flask("Sentiment Analyzer")
 
