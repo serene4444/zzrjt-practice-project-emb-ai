@@ -1,3 +1,8 @@
+import unittest
+
+from SentimentAnalysis.sentiment_analysis import sentiment_analyzer
+
+
 class TestSentimentAnalyzer(unittest.TestCase): 
     def test_sentiment_analyzer(self):
         # Test with a positive statement
@@ -12,7 +17,9 @@ class TestSentimentAnalyzer(unittest.TestCase):
         result_3 = sentiment_analyzer('I am working with AI models.')
         self.assertEqual(result_3['label'], 'SENT_NEUTRAL')
 
-        unittest.main()
+
+if __name__ == "__main__":
+    unittest.main()
 
 
 
