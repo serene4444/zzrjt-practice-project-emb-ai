@@ -4,18 +4,6 @@ Fast, browser-based sentiment analysis with resilient fallback logic so users ge
 
 ## Live Project Page
 
-- GitHub Pages URL (after enabling Pages in repository settings):
-	- https://YOUR_USERNAME.github.io/zzrjt-practice-project-emb-ai/
-- Docs site source:
-	- docs/index.html
-
-To publish it:
-1. Push this repository to GitHub.
-2. Go to repository Settings > Pages.
-3. Set Source to Deploy from a branch.
-4. Select branch `main` and folder `/docs`.
-5. Save and wait for deployment.
-
 ## Overview
 
 This project solves a common product issue: sentiment features that feel unreliable because they depend on a single external API call.
