@@ -1,4 +1,5 @@
 import requests
+import unittest
 from SentimentAnalysis.sentiment_analysis import sentiment_analyzer
 
 
@@ -32,3 +33,5 @@ def sentiment_analyzer(text_to_analyse):
 
 	# The endpoint returns 500 for invalid or empty text in this lab service.
 	return {"label": None, "score": None}
+
+
