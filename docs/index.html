@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sentiment Analyzer | Project Overview</title>
+  <meta name="description" content="Sentiment Analyzer project page with architecture, features, and setup.">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <p class="kicker">Software Engineering Project</p>
+      <h1>Sentiment Analyzer Web App</h1>
+      <p class="subtitle">Fast sentiment analysis with resilient fallback logic for reliable user experience.</p>
+      <div class="actions">
+        <a class="btn primary" href="../README.md">Read Full Documentation</a>
+        <a class="btn secondary" href="https://github.com/">View Source Code</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>What It Solves</h2>
+      <p>
+        API-driven sentiment features often degrade when upstream services are slow or unavailable.
+        This project combines remote inference with local fallback and request-level optimizations
+        to keep responses usable and fast.
+      </p>
+    </section>
+
+    <section>
+      <h2>Highlights</h2>
+      <ul>
+        <li>Flask backend with browser UI for text sentiment analysis</li>
+        <li>Remote-first inference with graceful local fallback</li>
+        <li>Blank-input handling with explicit user guidance</li>
+        <li>Connection reuse, cooldown logic, and cache-based performance improvements</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Architecture</h2>
+      <ol>
+        <li>User submits text in the UI.</li>
+        <li>Frontend sends a request to <code>/sentimentAnalyzer</code>.</li>
+        <li>Backend validates input and checks blank text early.</li>
+        <li>Analyzer attempts remote model inference.</li>
+        <li>If unavailable, local fallback returns sentiment safely.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Demo Placeholders</h2>
+      <p>Add screenshots or GIFs to:</p>
+      <ul>
+        <li><code>docs/images/ui-home.png</code></li>
+        <li><code>docs/images/ui-result.png</code></li>
+        <li><code>docs/demo/sentiment-flow.gif</code></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>Built by Mercu · Software Engineering Student focused on AI and backend systems.</p>
+    </div>
+  </footer>
+</body>
+</html>
